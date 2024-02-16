@@ -5,11 +5,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/keyword')
+@app.route('/Thurgsahini.pythonanywhere.com/keyword')
 def get_data():
     # Load data from the Excel file
-    #http://localhost:5000/keyword
-    excel_file = 'excel/keyword.xlsx'  
+    excel_file = 'keyword.xlsx'
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -17,11 +16,10 @@ def get_data():
 
     return jsonify(data)
 
-@app.route('/MSIC')
+@app.route('/Thurgashini.pythonanywhere.com/MSIC')
 def get_data2():
     # Load data from the Excel file
-    #http://localhost:5000/MSIC
-    excel_file = 'excel/MSIC.xlsx'  # Replace with your file name
+    excel_file = 'MSIC.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -29,11 +27,10 @@ def get_data2():
 
     return jsonify(data)
 
-@app.route('/mof')
+@app.route('/Thurgashini.pythonanywhere.com/mof')
 def get_data3():
     # Load data from the Excel file
-    #http://localhost:5000/mof
-    excel_file = 'excel/mof.xlsx'  # Replace with your file name
+    excel_file = 'mof.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -41,11 +38,10 @@ def get_data3():
 
     return jsonify(data)
 
-@app.route('/CIDB')
+@app.route('/Thurgashini.pythonanywhere.com/CIDB')
 def get_data4():
     # Load data from the Excel file
-    #http://localhost:5000/CIDB
-    excel_file = 'excel/CIDB.xlsx'  # Replace with your file name
+    excel_file = 'CIDB.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -53,11 +49,10 @@ def get_data4():
 
     return jsonify(data)
 
-@app.route('/SpecialBusinessTerm')
+@app.route('/Thurgashini.pythonanywhere.com/SpecialBusinessTerm')
 def get_data5():
     # Load data from the Excel file
-    #http://localhost:5000/SpecialBusinessTerm
-    excel_file = 'excel/SpecialBusinessTerm.xlsx'  # Replace with your file name
+    excel_file = 'SpecialBusinessTerm.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -66,7 +61,8 @@ def get_data5():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, port=5002)
+
 
 
 
