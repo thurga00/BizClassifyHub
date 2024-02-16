@@ -9,7 +9,7 @@ CORS(app)
 def get_data():
     # Load data from the Excel file
     #http://localhost:5000/keyword
-    excel_file = 'excel/keyword.xlsx'  
+    excel_file = 'keyword.xlsx'  
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -21,7 +21,7 @@ def get_data():
 def get_data2():
     # Load data from the Excel file
     #http://localhost:5000/MSIC
-    excel_file = 'excel/MSIC.xlsx'  # Replace with your file name
+    excel_file = 'MSIC.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -33,7 +33,7 @@ def get_data2():
 def get_data3():
     # Load data from the Excel file
     #http://localhost:5000/mof
-    excel_file = 'excel/mof.xlsx'  # Replace with your file name
+    excel_file = 'mof.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -45,7 +45,7 @@ def get_data3():
 def get_data4():
     # Load data from the Excel file
     #http://localhost:5000/CIDB
-    excel_file = 'excel/CIDB.xlsx'  # Replace with your file name
+    excel_file = 'CIDB.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
@@ -57,7 +57,7 @@ def get_data4():
 def get_data5():
     # Load data from the Excel file
     #http://localhost:5000/SpecialBusinessTerm
-    excel_file = 'excel/SpecialBusinessTerm.xlsx'  # Replace with your file name
+    excel_file = 'SpecialBusinessTerm.xlsx'  # Replace with your file name
     df = pd.read_excel(excel_file)
 
     # Convert data to a list of dictionaries
