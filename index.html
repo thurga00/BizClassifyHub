@@ -13,10 +13,7 @@
       min-height: 100vh;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      
     }
-    
-
     #container {
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 8px;
@@ -25,8 +22,10 @@
       text-align: center;
       max-width: 600px;
       width: 100%;
-      box-sizing: border-box; 
-    }
+      box-sizing: border-box;
+      overflow-x: auto; /* Add this line to enable horizontal scrolling */
+      max-height: 80vh; /* Set a maximum height for vertical size */
+      }
 
     #search-container {
       display: none;
@@ -111,17 +110,7 @@
       padding: 12px; 
       text-align: center;
     }
-    #result-container {
-      max-width: 100%;
-      overflow-x: auto;
-      }
-      
-    table {
-      width: 100%;
-      max-width: 100%;
-      margin-top: 20px;
-      border-collapse: collapse;
-      }
+    
     th {
       background-color: #f2f2f2;
       text-align: center;
